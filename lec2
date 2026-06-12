@@ -1,0 +1,205 @@
+icrosoft Windows [Version 10.0.22631.6199]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\cccuser>cd C:\Users\cccuser\Desktop\python
+
+C:\Users\cccuser\Desktop\python>python -m venv my_env
+
+C:\Users\cccuser\Desktop\python>my_env\Scripts\active
+'my_env\Scripts\active' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\cccuser\Desktop\python>my_env\Scripts\activate
+
+(my_env) C:\Users\cccuser\Desktop\python>python
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+KeyboardInterrupt
+>>> python
+Traceback (most recent call last):
+  File "<python-input-0>", line 1, in <module>
+    python
+NameError: name 'python' is not defined
+>>> exit()
+
+(my_env) C:\Users\cccuser\Desktop\python>pip install numpy
+Collecting numpy
+  Downloading numpy-2.4.6-cp313-cp313-win_amd64.whl.metadata (6.6 kB)
+Downloading numpy-2.4.6-cp313-cp313-win_amd64.whl (12.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 7.1 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-2.4.6
+
+[notice] A new release of pip is available: 24.3.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(my_env) C:\Users\cccuser\Desktop\python>python
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> arr=np.array([1,2,3])
+>>> arr1.sum()
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    arr1.sum()
+    ^^^^
+NameError: name 'arr1' is not defined. Did you mean: 'arr'?
+>>> arr.sum()
+np.int64(6)
+>>> print(arr)
+[1 2 3]
+>>> arr.mean()
+np.float64(2.0)
+>>> arr1=np.array([1,2,3,4])
+>>> arr2=np.array([4,5,6,7])
+>>> arr1+arr2
+array([ 5,  7,  9, 11])
+>>> arr1*arr2
+array([ 4, 10, 18, 28])
+>>> arr1%arr2
+array([1, 2, 3, 4])
+>>> arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+>>> print(arr)
+[[[1 2 3]
+  [4 5 6]]
+
+ [[1 2 3]
+  [4 5 6]]]
+>>> arr = np.array([[1, 2, 3], [4, 5, 6]])
+>>> arr.sqrt()
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    arr.sqrt()
+    ^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'sqrt'. Did you mean: 'sort'?
+>>> np.sqrt()
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    np.sqrt()
+    ~~~~~~~^^
+TypeError: sqrt() takes from 1 to 2 positional arguments but 0 were given
+>>> np.sqrt(arr)
+array([[1.        , 1.41421356, 1.73205081],
+       [2.        , 2.23606798, 2.44948974]])
+>>> np.**(arr)
+  File "<python-input-17>", line 1
+    np.**(arr)
+       ^^
+SyntaxError: invalid syntax
+>>> arr = np.array([[1, 2, 3], [4, 5, 6]])
+>>>
+>>>
+>>>
+>>>
+>>> np.pi
+3.141592653589793
+>>> angles=np.array([0,np.pi/2,np.pi])
+>>> np.sin(angles)
+array([0.0000000e+00, 1.0000000e+00, 1.2246468e-16])
+>>> arr1=np.array([1,2,3,4,5])
+>>> arr1.mean()
+np.float64(3.0)
+>>> arr2=np.array([6,7,8,9])
+>>> arr1*arr2
+Traceback (most recent call last):
+  File "<python-input-29>", line 1, in <module>
+    arr1*arr2
+    ~~~~^~~~~
+ValueError: operands could not be broadcast together with shapes (5,) (4,)
+>>> arr2=np.array([6,7,8,9,10])
+>>> arr1*arr2
+array([ 6, 14, 24, 36, 50])
+>>> name='john'
+>>> name='peter'
+>>> print(name)
+peter
+>>> s="shamil"
+>>> s[0]
+'s'
+>>> s[-1]
+'l'
+>>> s[-8]
+Traceback (most recent call last):
+  File "<python-input-38>", line 1, in <module>
+    s[-8]
+    ~^^^^
+IndexError: string index out of range
+>>> s[-4]
+'a'
+>>> s[-7]
+Traceback (most recent call last):
+  File "<python-input-40>", line 1, in <module>
+    s[-7]
+    ~^^^^
+IndexError: string index out of range
+>>>
+...
+... s[-2
+... ]
+...
+...
+'i'
+>>> s(2:6)
+  File "<python-input-42>", line 1
+    s(2:6)
+       ^
+SyntaxError: invalid syntax
+>>> s(2:5)
+  File "<python-input-43>", line 1
+    s(2:5)
+       ^
+SyntaxError: invalid syntax
+>>> s[2:5]
+'ami'
+>>> range
+<class 'range'>
+>>> range(7)
+range(0, 7)
+>>> list(range(3,16,2))
+[3, 5, 7, 9, 11, 13, 15]
+>>> list(range(4,20,2))
+[4, 6, 8, 10, 12, 14, 16, 18]
+>>> list(range(4,21,2))
+[4, 6, 8, 10, 12, 14, 16, 18, 20]
+>>> range
+<class 'range'>
+>>> range(0,10000)
+range(0, 10000)
+
+>>> list(range(0,5))
+[0, 1, 2, 3, 4]
+>>> list(range(0,10000))
+
+>>> li[10000]
+Traceback (most recent call last):
+  File "<python-input-52>", line 1, in <module>
+    li[10000]
+    ~~^^^^^^^
+IndexError: list index out of range
+>>> li[9999]
+9999
+>>> abs(-1)
+1
+>>> len(li)
+10000
+>>> len(li)-1
+9999
+>>> li[9999]
+9999
+>>> li[len(li)-1]
+9999
+>>> range(3,15)
+range(3, 15)
+>>> range(3,15,2)
+range(3, 15, 2)
+>>> range(3,15,2)
+range(3, 15, 2)
+>>> list(range(3,15,2))
+[3, 5, 7, 9, 11, 13]
+
+>>> list(range(4,20,2))
+[4, 6, 8, 10, 12, 14, 16, 18]
+>>> list(range(4,21,2))
+[4, 6, 8, 10, 12, 14, 16, 18, 20]
+>>>
