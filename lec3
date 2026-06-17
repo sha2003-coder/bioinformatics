@@ -1,0 +1,121 @@
+>>> s="programming"
+>>> list(s[0:5])
+['p', 'r', 'o', 'g', 'r']
+>>> s[0:5]
+'progr'
+>>>
+>>> s[-1:-6:-1]
+'gnimm'
+>>> name="gohn"
+>>> print(name)
+gohn
+>>> name.upper()
+'GOHN'
+>>> name.lower()
+'gohn'
+>>>
+>>> name=" john "
+>>> name.strip()
+'john'
+>>> name
+' john '
+>>>
+>>> name="john"
+>>> id(name)
+1702927154272 (memory address location)
+mutable and imutable
+arr=[1,2,3]
+>>> id(arr)
+1702933466048
+>>> arr.append(4)
+>>> id(arr)
+1702933466048
+//garbage factor
+>>> a=[1,2,3]
+>>> b=a
+>>> b.append(4)
+>>> b
+[1, 2, 3, 4]
+>>> a
+[1, 2, 3, 4]
+>>> a.append(5)
+>>> b
+[1, 2, 3, 4, 5]
+>>>
+>>> a=[1,2,3]
+>>> b=a.copy()
+>>> b
+[1, 2, 3]
+>>> a
+[1, 2, 3]
+>>> id(a)
+1702933483904
+>>> id(b)
+1702933370624
+>>> arr=[1,2,3,4]
+>>> arr.append(4)
+>>> arr
+[1, 2, 3, 4, 4]
+>>> arr.insert(2,5)  //2=index, 5=value 5 come to index2
+>>> arr
+[1, 2, 5, 3, 4, 4]
+
+>>> arr.pop() // removve last element of the array
+4
+>>> arr
+[1, 2, 5, 3, 4]
+>>> arr=[2,3,4,5]
+>>> arr.remove(3)
+>>> arr
+[2, 4, 5]
+>>> s1={1,2,3,3,4}
+>>> s1
+{1, 2, 3, 4}
+>>> b={3,4,6,7,3}
+>>> s1 & b //intersection
+{3, 4}
+>>> s1|b
+{1, 2, 3, 4, 6, 7} //union
+
+>>> cars={"audi","BMW","honda"}
+>>> bike={"bmw","honda","hero honda"}
+>>> cars & bike
+{'honda'}
+>>> cars | bike
+{'hero honda', 'BMW', 'honda', 'audi', 'bmw'}
+>>> cars - bike
+{'BMW', 'audi'}
+>>> s1
+(8, 6, 5, 8, 9)
+>>> s1+(6,)
+(8, 6, 5, 8, 9, 6) //imutable
+TypeError: unsupported operand type(s) for +: 'set' and 'tuple'
+>>> s1={1,2,3}
+>>> id(s1)
+2452651072576
+>>> s1.add("A")
+>>> s1
+{1, 2, 3, 'A'}  //hetrogenius array
+>>> s1.discard(2)
+>>> s1
+{1, 3, 'A'}
+>>> s1.discard(6)
+>>> s1
+{1, 3, 'A'}
+>>>
+>>> [1,2,3,4,5,[23,34]]
+[1, 2, 3, 4, 5, [23, 34]]
+>>> john={"name":"john","age":18}  // dictionary datatype
+>>> john
+{'name': 'john', 'age': 18}
+>>> john["name"]
+'john'
+>>>
+
+
+
+
+
+
+
+
