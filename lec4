@@ -1,0 +1,57 @@
+>>> letters
+{'b', 'd', 'a', 'c'}
+>>> letters.discard('c')
+>>> letters
+{'b', 'd', 'a'}
+>>> student={"name":"Alice","age":20}
+>>> student["city"]="kandy"
+>>> student
+{'name': 'Alice', 'age': 20, 'city': 'kandy'}
+>>> employee={"id":"001","name":"john","salary":500000}
+>>> employee.get("salary")
+500000
+>>> t=(10,20,30,20)
+>>> t.count(20)
+2
+>>> t.index(30) //find index of numbers
+2
+>>> input()  //get user input
+shamil
+'shamil'
+>>> age=input("enter age:")
+enter age:23
+>>> age
+'23'
+>>> type(age)
+<class 'str'>
+>>> age=int(age)
+>>> type(age)
+<class 'int'>
+>>> age=int(input("enter age"))
+enter age23
+>>> type(age)
+<class 'int'>
+>>> ls="10,20,30,40"
+>>> ls[0]
+'1'
+>>> ls.split(",")
+['10', '20', '30', '40']
+>>> txt=input("list of nums:")
+list of nums:10,20,30
+>>> txt=txt.split(",")
+>>> txt
+['10', '20', '30']
+>>> txt[0]=txt[0]
+>>> txt
+['10', '20', '30']
+>>> txt=int(txt[0])
+>>> txt
+10
+>>> arr=list(map(int,input().split(',')))
+10,20,30
+>>> arr
+[10, 20, 30]
+>>> arr=["10","20","30"]
+>>> mp=map(int,arr)
+>>> list(mp)
+[10, 20, 30]
