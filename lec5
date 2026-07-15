@@ -14,3 +14,73 @@ ls
 1
 >>>
 t=("john",24,"jaffna")
+>>> t=("john",24,"jaffna")
+>>> name,age,city=t  // want exact numbert of values
+>>> name
+'john'
+>>> age
+24
+>>> city
+'jaffna'
+>>> t=("john",24,"jaffna","colombo")
+>>> name,age,city=t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: too many values to unpack (expected 3)
+>>> t.appent("colombo")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'appent'  // tuple
+
+//hash
+>>> hash("john")
+4600033239152658668
+{('A','B')}:"name"}
+s1={'ATG','ACG','AGG'}
+s2={'ATG','ACC','AGG'}
+>>> s1 & s2
+{'ATG', 'AGG'}
+>>> list(range(0,10,2))
+[0, 2, 4, 6, 8]
+>>> ls=[1,3,4]
+>>> ls[0]
+1
+>>> r=range(0,10,2)
+>>> r[0]
+0
+>>> r[1]
+2
+>>>
+>>> ls=[2,3,4]
+>>> for value in ls:
+...     print(value)
+...
+2
+3
+4
+ p1="ACGGCD"
+>>> for i in p1:
+...     print(i)
+...
+A
+C
+G
+G
+C
+D
+gen="ACCAGACC"
+>>> count={}
+>>> for i in gen:
+...     if i in count:
+...             count[i]+=1
+...     else:
+...             count[i]=1
+... print(count)
+  File "<stdin>", line 6
+    print(count)
+    ^^^^^
+SyntaxError: invalid syntax                            /////////// try this in home
+>>>
+
+
+
