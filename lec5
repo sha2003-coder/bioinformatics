@@ -1,0 +1,16 @@
+ls=[6,1,7,9,2]
+ls
+[6, 1, 7, 9, 2]
+>>>ls.sort()
+>>> ls
+[1, 2, 6, 7, 9]
+
+>>> ls.sort(reverse=True)
+>>> ls
+[9, 7, 6, 2, 1]
+>>> ls.count
+<built-in method count of list object at 0x000001A9CE3E1240>
+>>> ls.count(6)
+1
+>>>
+t=("john",24,"jaffna")
