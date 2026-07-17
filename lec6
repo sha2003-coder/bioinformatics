@@ -1,0 +1,37 @@
+Bioinformatics-GlobalAlignment
+
+pip install bio  // install bio   
+from Bio.Align import PairwiseAligner  //python code 01
+#need library biopython
+seq1 = "GATTACA"
+seq2 = "GCATGCU"
+
+aligner = PairwiseAligner()
+
+# Set global alignment mode
+aligner.mode = "global"
+
+# Scoring scheme
+aligner.match_score = 1
+aligner.mismatch_score = -1
+aligner.open_gap_score = -2
+aligner.extend_gap_score = -2
+
+alignments = aligner.align(seq1, seq2)
+
+best_alignment = alignments[0]
+
+print(best_alignment)
+print("Score:", best_alignment.score)
+print("Score:", best_alignment.score)
+
+//output
+target            0 GATTACA 7
+                  0 |..|.|. 7
+query             0 GCATGCU 7
+
+Score: -1.0
+Score: -1.0
+
+
+
