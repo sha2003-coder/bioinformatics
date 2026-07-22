@@ -12,3 +12,6 @@ As technology continues to grow with Artificial Intelligence, Cloud Computing, B
 Therefore, governments, organisations, and individuals must work together to respect intellectual property rights and use technology responsibly.
 By protecting intellectual property, we encourage more research, innovation, investment, and economic growth for the future.
 Thank you all for your time and attention. We hope you found our presentation useful. Have a great day!
+
+
+genarate a for  laptop sticker for me github logo with github user name
